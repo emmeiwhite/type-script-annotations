@@ -37,3 +37,8 @@ let object: { x: number; y: number } = {
   x: 10,
   y: 23,
 };
+
+// 2. Type Inference: If the declaration and initialization are on the same line, TypeScript will figure out the type for us.
+
+let wizardName = "Gandalf!";
+let numbers = [2, 3];
