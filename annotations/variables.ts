@@ -42,3 +42,12 @@ let object: { x: number; y: number } = {
 
 let wizardName = "Gandalf!";
 let numbers = [2, 3];
+
+/** --- Question: When to use type annotations ? --- */
+// 1. Functions that return the "any" type
+
+const json = '{ "x": 12, "y": 45 }';
+const coordinates: { x: number; y: number } = JSON.parse(json);
+// Here the parse function returns the "any" type
+
+// Let's annotate coordinates variable to have the type as in the object literal const coordinates: { x: number; y: number } = JSON.parse(json);
