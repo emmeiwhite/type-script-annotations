@@ -51,3 +51,14 @@ const coordinates: { x: number; y: number } = JSON.parse(json);
 // Here the parse function returns the "any" type
 
 // Let's annotate coordinates variable to have the type as in the object literal const coordinates: { x: number; y: number } = JSON.parse(json);
+
+// coordinates.k = 3; So now TS will give an error !
+
+// 2. When we declare the variable on one line and initialize it later
+
+const words = ["never", "give", "up"];
+let isWordFound: boolean; // So, we type annotated it here itself
+
+if (words.includes("give")) {
+  isWordFound = true;
+}
