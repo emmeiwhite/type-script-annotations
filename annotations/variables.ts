@@ -12,3 +12,28 @@ let nothing: undefined = undefined;
 let date: Date = new Date();
 
 /** Type Annotations are used with any type of value - literally any type of value */
+
+// Array
+
+const friends: string[] = [
+  "Mumin",
+  "Haris",
+  "Mr. Malik",
+  "Sahil",
+  "Wasim",
+  "Shakil",
+];
+
+let myNumbers: number[] = [12, 54, 45];
+let truths: boolean[] = [true, true, false];
+
+// Class
+class Car {}
+
+let ferari: Car = new Car();
+
+// Object literal
+let object: { x: number; y: number } = {
+  x: 10,
+  y: 23,
+};
