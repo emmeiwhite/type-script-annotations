@@ -62,3 +62,15 @@ let isWordFound: boolean; // So, we type annotated it here itself
 if (words.includes("give")) {
   isWordFound = true;
 }
+
+// 3. When the TypeScript cannot guess the correct type or variables whole type cannot be inferred!
+
+// we have a numberArray, if the number is above 0, we'll set the numberAboveZero to the same value or keep it as boolean false
+let numberArray = [-12, 4, -32];
+let numberAboveZero: boolean | number = false;
+
+numberArray.forEach((num) => {
+  if (num > 0) numberAboveZero = num;
+});
+
+// It was just a silly example, never the less we covered all 3 cases where we as a developer will annotate and inference cannot be done by TS!
