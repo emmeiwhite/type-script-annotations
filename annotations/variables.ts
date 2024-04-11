@@ -2,7 +2,7 @@ let apples: number = 5;
 
 let speed: string = "fast";
 
-let isRaining: boolen = true;
+let isRaining: boolean = true;
 
 let nothingMuch: null = null;
 
