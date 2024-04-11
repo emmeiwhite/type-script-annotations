@@ -21,3 +21,9 @@ const myCar = carMakers.pop(); // hover over myCar and it shows String | undefin
 // 3. Help with 'map' and get auto suggested functions for strings in this case when
 
 carMakers.map((car) => car.toLowerCase()); // if we type dot (.) after the car we'll get auto access to the functions that the string type has
+
+/** --- Multiple Types --- */
+
+const multipleDate: (string | Date)[] = [new Date(), "13-May-1992"];
+
+multipleDate.push(new Date());
